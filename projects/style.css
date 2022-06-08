@@ -151,7 +151,7 @@ body {
 
 .item-inner .content {
     padding: 1.5rem;
-    height: calc(100% - 44px);
+    height: calc(100% - 45px);
 }
 
 .item-inner .content h3 {
@@ -164,7 +164,7 @@ body {
     color: #444;
     overflow: hidden; 
     text-overflow: ellipsis; 
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     display: -webkit-box;
     text-align: justify;
@@ -205,6 +205,21 @@ body {
 
 .item-inner .item-footer .date h5 {
     margin: 0;
+}
+
+.item-inner .item-footer .item-star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: #eac54f;
+    color: #444;
+    margin-left: 0.5rem;
+}
+.item-inner .item-footer .item-star span {
+    font-size: 15px;
+    margin-left: 0.25rem;
 }
 
 a:hover,
