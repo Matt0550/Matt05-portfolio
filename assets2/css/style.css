@@ -1,0 +1,83 @@
+/*
+    Variables
+*/
+:root {
+    --primary-color: #fff;
+    --primary-color-hover: #ccc;
+    --primary-color-border: #000;
+    --sb-track-color: rgb(0 0 0);
+    --sb-thumb-color: var(--primary-color);
+    --sb-size: 5px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+    height: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+    font-family: monospace;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(100px);
+    }
+}
+
+@keyframes customBounce {
+
+    0%,
+    100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+#scroll-downs-icon-mouse>#wheel {
+    animation: scroll ease 1.5s infinite;
+}
+
+.custom-bounce {
+    animation: customBounce 1s infinite;
+}
+
+.header {
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
