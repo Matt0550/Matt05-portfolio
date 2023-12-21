@@ -9,6 +9,14 @@
     --sb-thumb-color: var(--primary-color);
     --sb-size: 5px;
 }
+a {
+    text-decoration: underline;
+    color: rgb(62, 106, 224);
+}
+
+a:hover {
+    color: rgb(33, 84, 224);
+}
 
 html {
     scroll-behavior: smooth;
@@ -79,7 +87,8 @@ body {
     left: 50%;
     margin: 0 auto;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    
 }
 
 #particles-js {
@@ -96,3 +105,4 @@ body {
     width: 100% !important;
     height: 100vh !important
 }
+

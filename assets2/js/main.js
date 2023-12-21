@@ -1,6 +1,15 @@
 document.addEventListener(
   "DOMContentLoaded",
   function () {
+    var typed = new Typed("#typed", {
+      strings: ["> Frontend Developer", "> Backend Developer", "> Student", "> Gamer"],
+      typeSpeed: 80,
+      backSpeed: 80,
+      backDelay: 1800,
+      loop: true,
+      showCursor: false,
+      contentType: null,
+    });
     new SweetScroll({}),
       particlesJS("particles-js", {
         particles: {
