@@ -9,14 +9,15 @@
     --sb-thumb-color: var(--primary-color);
     --sb-size: 5px;
 }
-a {
-    text-decoration: underline;
-    color: rgb(62, 106, 224);
+.custom-link {
+    text-decoration: underline !important;
+    color: #ddd !important;
 }
 
-a:hover {
+.custom-link:hover {
     color: rgb(33, 84, 224);
 }
+
 
 html {
     scroll-behavior: smooth;
