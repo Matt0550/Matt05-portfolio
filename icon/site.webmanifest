@@ -3,12 +3,12 @@
     "short_name": "Matt05 Developer",
     "icons": [
         {
-            "src": "https://matt05.it/icon/android-chrome-192x192.png",
+            "src": "https://matteosillitti.it/icon/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "https://matt05.it/icon/android-chrome-256x256.png",
+            "src": "https://matteosillitti.it/icon/android-chrome-256x256.png",
             "sizes": "256x256",
             "type": "image/png"
         }
